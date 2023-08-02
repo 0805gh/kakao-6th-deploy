@@ -1,15 +1,14 @@
 package com.example.kakao.user;
 
 import lombok.Getter;
-import lombok.Setter;
 
 public class UserResponse {
 
-    @Getter @Setter
+    @Getter
     public static class FindById{
-        private int id;
-        private String username;
-        private String email;
+        private final int id;
+        private final String username;
+        private final String email;
 
         public FindById(User user) {
             this.id = user.getId();
