@@ -215,7 +215,7 @@ class CartRestControllerTest extends MyRestDoc {
         //given
         List<CartRequest.SaveDTO> requestDTOs = new ArrayList<>();
         CartRequest.SaveDTO item = new CartRequest.SaveDTO();
-        item.setQuantity(1);
+        item.setOptionId(1);
         item.setQuantity(5);
 
         requestDTOs.add(item);
@@ -487,7 +487,7 @@ class CartRestControllerTest extends MyRestDoc {
         List<CartRequest.UpdateDTO> requestDTOs = new ArrayList<>();
         CartRequest.UpdateDTO item = new CartRequest.UpdateDTO();
         item.setCartId(1);
-        item.setQuantity(1000);
+        item.setQuantity(10);
 
         requestDTOs.add(item);
 
